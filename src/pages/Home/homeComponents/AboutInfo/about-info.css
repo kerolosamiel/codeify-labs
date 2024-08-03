@@ -1,0 +1,9 @@
+.info .text-bx h1 {
+  color: var(--black);
+  font-weight: 900;
+}
+
+.info .text-bx .separator-line {
+  height: 0.2em;
+  background-color: var(--secondary-color);
+}

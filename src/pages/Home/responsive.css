@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {
+  .about-container .info {
+    flex-direction: column;
+  }
+
+  .about-container p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+
+  .about-container .info .image-sec {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .about-container .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container .features .feature {
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-container {
+    width: 90%;
+  }
+}

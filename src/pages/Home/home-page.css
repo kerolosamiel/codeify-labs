@@ -1,0 +1,12 @@
+/* About section */
+.about-container {
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+  width: 80%;
+}
+
+.about-container p {
+  color: var(--black);
+  font-size: 1.1em;
+  line-height: 1.5;
+}

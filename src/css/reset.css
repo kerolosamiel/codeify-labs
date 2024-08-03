@@ -2,9 +2,12 @@
   --background-color: #030712;
   --primary-color: #e2e8f0;
   --text-color: #fafaf9;
+  --secondary-color: #d9d9d9;
   --accent-color: #6b7554;
   --completing-gradient-color: #f7fee7;
   --neon-color: #c026d3;
+  --card-background: #e2e8f0;
+  --black: #000000;
 
   --font-primary: "Inter", sans-serif;
   --font-secondry: "Inria Serif", serif;
@@ -13,7 +16,8 @@
   --spacing-medium: 1em;
   --spacing-large: 2em;
 
-  --border-radius: 0.5em;
+  --border-radius: 1em;
+  --card-border-radius: 1.5em;
 }
 
 *,
@@ -54,14 +58,10 @@ span {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
   transition: 0.6s ease;
-}
-
-a:hover {
-  color: var(--accent-color);
 }
 
 button {
