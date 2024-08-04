@@ -1,5 +1,6 @@
 import logo from "../assets/logo.svg";
 import "./public.css";
+import "./public-responsive.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
