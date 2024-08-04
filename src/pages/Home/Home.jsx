@@ -33,7 +33,7 @@ const Home = () => {
       {/* // About section */}
 
       <section className="about my-4">
-        <div className="about-container p-4 m-auto d-flex flex-column gap-5   ">
+        <div className="about-container m-auto d-flex flex-column gap-5">
           <AboutInfo />
           <div className="features d-flex gap-3 justify-content-center">
             {/* Mapping over featureDetails array to render each feature */}

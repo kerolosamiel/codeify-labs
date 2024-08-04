@@ -2,7 +2,8 @@
 .about-container {
   border-radius: var(--card-border-radius);
   background-color: var(--card-background);
-  width: 75%;
+  width: 70%;
+  padding: 2em;
 }
 
 .about-container p {
