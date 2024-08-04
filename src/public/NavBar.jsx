@@ -1,8 +1,15 @@
 import logo from "../assets/logo.svg";
 import "./public.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const links = [
+    { name: "home", to: "/" },
+    { name: "about", to: "about" },
+    { name: "projects", to: "projects" },
+    { name: "contact", to: "contact" },
+  ];
   const [activeClass, setActiveClass] = useState(false);
   const onClickHandler = () => {
     setActiveClass(!activeClass);
@@ -27,18 +34,11 @@ const NavBar = () => {
       </div>
       <nav className="custom-nav">
         <ul className="d-flex flex-column gap-2 links-container">
-          <li>
-            <a href="#">home</a>
-          </li>
-          <li>
-            <a href="#">about</a>
-          </li>
-          <li>
-            <a href="#">projects</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link to={link.to}>{link.name}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
