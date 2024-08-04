@@ -16,7 +16,7 @@ const NavBar = () => {
   };
   return (
     <header
-      className={`header d-flex justify-content-between ${
+      className={`header d-flex justify-content-between align-items-center ${
         activeClass ? "active" : ""
       }`}
     >
