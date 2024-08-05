@@ -1,6 +1,6 @@
 .feature {
   padding: var(--spacing-medium) var(--spacing-small);
-  border-top: 0.2em solid var(--secondary-color);
+  border-top: 0.1em solid var(--secondary-color);
   width: calc((100% - 2em) / 3);
 }
 
@@ -12,15 +12,23 @@
 
 .feature .icon {
   color: var(--black);
-  width: 4.6875em;
-  height: 4.6875em;
+  width: 3.5em;
+  height: 3.5em;
   background-color: var(--completing-gradient-color);
 }
 
 .feature .icon svg {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .feature h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.feature p {
+  font-size: 0.8em;
+  color: #444;
+  font-weight: 100;
 }

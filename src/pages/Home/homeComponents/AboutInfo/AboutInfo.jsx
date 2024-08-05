@@ -12,27 +12,28 @@ function AboutInfo() {
   ];
 
   return (
-    <div className="info d-flex gap-4">
-      <div className="text-bx d-flex flex-column gap-4">
-        <div className="title">
-          <h1>Why Codiify ?</h1>
-        </div>
+    <div className="text-bx d-flex flex-column gap-3">
+      <div className="title">
+        <h1>Why Codiify ?</h1>
+      </div>
 
-        <div className="separator-line rounded w-75"></div>
+      <div className="separator-line rounded mb-2"></div>
 
+      <div className="info d-flex gap-4">
         <p>
           Hi, I’m <Link to="abdalla">Abdalla Shaker</Link> and together with{" "}
           <Link to="kerolos">Kerolos Amiel</Link>, we create websites for
           people, bringing their ideas to life online. We believe building web
           applications should be quick, easy and accessible to everyone.
-          <Link to="full-story"> Read the full story</Link>
+          <br />
+          Read<Link to="full-story"> the full story</Link>
         </p>
-      </div>
 
-      <div className="image-sec d-flex gap-3">
-        {onwersImgs.map((image, index) => (
-          <AboutImgs img={image.img} alt={image.alt} key={`img-${index}`} />
-        ))}
+        <div className="image-sec d-flex gap-3">
+          {onwersImgs.map((image, index) => (
+            <AboutImgs img={image.img} alt={image.alt} key={`img-${index}`} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
   border-radius: var(--card-border-radius);
   background-color: var(--card-background);
   width: 80%;
+  max-width: 850px;
 }
 
 .about-container p {

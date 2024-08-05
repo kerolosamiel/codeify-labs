@@ -1,9 +1,16 @@
-.info .text-bx h1 {
+.text-bx h1 {
   color: var(--black);
   font-weight: 900;
 }
 
-.info .text-bx .separator-line {
-  height: 0.2em;
+.text-bx .separator-line {
+  height: 0.1em;
   background-color: var(--secondary-color);
+  width: 35%;
+}
+
+.info p {
+  color: #444;
+  font-size: 0.8em;
+  padding-right: 5em;
 }

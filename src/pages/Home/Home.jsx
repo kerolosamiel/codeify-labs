@@ -28,23 +28,27 @@ const Home = () => {
   ];
 
   return (
-    // About section
-    <section className="about my-4">
-      <div className="about-container p-4 m-auto d-flex flex-column gap-3">
-        <AboutInfo />
-        <div className="features d-flex gap-3">
-          {/* Mapping over featureDetails array to render each feature */}
-          {featureDetails.map((feature, index) => (
-            <Features
-              key={index}
-              icon={feature.icon}
-              title={feature.title}
-              text={feature.description}
-            />
-          ))}
+    <>
+      {/* // Header section  */}
+      {/* // About section */}
+
+      <section className="about my-4">
+        <div className="about-container p-4 m-auto d-flex flex-column gap-5   ">
+          <AboutInfo />
+          <div className="features d-flex gap-3">
+            {/* Mapping over featureDetails array to render each feature */}
+            {featureDetails.map((feature, index) => (
+              <Features
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                text={feature.description}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

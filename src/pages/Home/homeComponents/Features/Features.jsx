@@ -2,7 +2,7 @@ import "./features.css";
 
 function Features({ icon, title, text }) {
   return (
-    <div className="feature d-flex flex-column gap-3">
+    <div className="feature d-flex flex-column gap-2">
       <div className="icon rounded-circle d-flex justify-content-center align-items-center">
         {icon}
       </div>
